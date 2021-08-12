@@ -1,0 +1,15 @@
+version: "3"
+services:
+  app:
+    container_name: zappaboy_portfolio
+    image: zappaboy_portfolio:latest
+    restart: always
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "${PORT}:4404"
+    volumes:
+      - .:/usr/src/app
