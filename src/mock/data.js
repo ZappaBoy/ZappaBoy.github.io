@@ -25,6 +25,7 @@ export const aboutData = {
   paragraphThree:
     "I'm also very interested in automated trading and cryptocurrencies, in fact I'm the creator of JATB, a trading framework that helps trader to automate their strategies.",
   paragraphFour: 'Last but not least I like Bash scripting, Emacs and... ',
+  paragraphFive: 'I use Arch (Linux) btw.',
   resume: '', // if no resume, the button will not show up
 };
 
@@ -32,17 +33,17 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'genesy.png',
     title: 'Genesy Project',
     info: 'Italian blockchain platform for personal DNA and microbiome sequencing',
     info2:
       'Thanks to blockchain, cloud computing, and artificial intelligence, genomics a takes it to a new level',
     url: 'https://www.frontiersin.org/articles/10.3389/fbloc.2020.483227/full?utm_source=S-TWT&utm_medium=SNET&utm_campaign=ECO_FBLOC_XXXXXXXX_auto-dlvrit',
-    repo: 'https://www.genesyproject.com/', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'jatb.jpg',
     title: 'JATB',
     info: 'Just Another Trading Bot is an open-source framework created and developed by me.',
     info2:
@@ -52,7 +53,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'hyperledger.png',
     title: 'Hyperledger Projects',
     info: 'Most of my projects are permissioned Distributed Ledger based on Hyperledger Fabric.',
     info2:
