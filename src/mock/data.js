@@ -49,7 +49,7 @@ export const projectsData = [
     info2:
       'JATB simplify the automatization of a trading strategy based on cryptocurrencies market.',
     url: '',
-    repo: 'https://github.com/ZappaBoy/justanothertradingbot', // if no repo, the button will not show up
+    repo: 'https://github.com/ZappaBoy/JA-Trading-Bot', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
