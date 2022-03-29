@@ -67,7 +67,7 @@ export const projectsData = [
 export const contactData = {
   cta: 'Would you like to work with me?',
   btn: "Let's talk",
-  email: 'f.zappone1@studenti.unimol.it',
+  email: 'f.zappone1.job@gmail.com',
 };
 
 // FOOTER DATA
