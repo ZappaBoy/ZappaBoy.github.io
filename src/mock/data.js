@@ -43,13 +43,13 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'jatb.jpg',
+    img: 'jatb.png',
     title: 'JATB',
     info: 'Just Another Trading Bot is an open-source framework created and developed by me.',
     info2:
       'JATB simplify the automatization of a trading strategy based on cryptocurrencies market.',
     url: '',
-    repo: 'https://github.com/ZappaBoy/JA-Trading-Bot', // if no repo, the button will not show up
+    repo: 'https://github.com/Just-Another-Organization/JA-Trading-Bot', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
