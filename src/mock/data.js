@@ -90,6 +90,11 @@ export const footerData = {
     },
     {
       id: nanoid(),
+      name: 'heart',
+      url: 'https://github.com/sponsors/zappaboy',
+    },
+    {
+      id: nanoid(),
       name: 'github',
       url: 'https://github.com/ZappaBoy',
     },
