@@ -19,11 +19,11 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne:
-    "I'm Federico Zappone, I'm a developer graduated in Computer Science at University of Molise (UNIMOL).",
+    "I'm Federico Zappone, I'm a developer with Master's Degree in Software Systems Security.",
   paragraphTwo:
-    "I'm a full stack developer but mostly I develop Blockchain and Distributed Ledger Technologies with the Hyperledger Fabric platform.",
+    "I'm a full stack developer and a co-founder of Just Another S.R.L and BB-SMILE S.R.L.",
   paragraphThree:
-    "I'm also very interested in automated trading and cryptocurrencies, in fact I'm the creator of JATB, a trading framework that helps trader to automate their strategies.",
+    "I'm also very interested in Blockchain and Distributed Ledger Technologies, automated trading and cryptocurrencies, in fact I'm the creator of JATB, a trading framework that helps trader to automate their strategies.",
   paragraphFour: 'Last but not least I like Bash scripting, Emacs and... ',
   paragraphFive: 'I use Arch (Linux) btw.',
   resume: '', // if no resume, the button will not show up
@@ -33,12 +33,12 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'genesy.png',
-    title: 'Genesy Project',
-    info: 'Italian blockchain platform for personal DNA and microbiome sequencing',
+    img: 'justanother.png',
+    title: 'Just Another S.R.L.',
+    info: 'Just Different, Another Experience',
     info2:
-      'Thanks to blockchain, cloud computing, and artificial intelligence, genomics a takes it to a new level',
-    url: 'https://www.frontiersin.org/articles/10.3389/fbloc.2020.483227/full?utm_source=S-TWT&utm_medium=SNET&utm_campaign=ECO_FBLOC_XXXXXXXX_auto-dlvrit',
+      'Just Another is an Italian IT company focused on find and develop high-quality software solutions. We are focused on Artifical Intelligence and innovative technologies.',
+    url: 'https://justanother.cloud/',
     repo: '', // if no repo, the button will not show up
   },
   {
@@ -55,7 +55,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'hyperledger.png',
     title: 'Hyperledger Projects',
-    info: 'Most of my projects are permissioned Distributed Ledger based on Hyperledger Fabric.',
+    info: 'I worked on permissioned Distributed Ledger based on Hyperledger Fabric.',
     info2:
       'Hyperledger is an open source community focused on developing a suite of stable frameworks, tools and libraries for enterprise-grade blockchain deployments.',
     url: 'https://www.researchgate.net/profile/Remo-Pareschi/publication/350013522_What_is_your_Distributed_HyperLedger/links/604b62da299bf1f5d8417324/What-is-your-Distributed-HyperLedger.pdf',
