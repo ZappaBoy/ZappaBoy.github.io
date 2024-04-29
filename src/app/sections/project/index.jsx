@@ -3,9 +3,9 @@ import { domAnimation, LazyMotion, useInView } from "framer-motion";
 import Link from "next/link";
 import Error from "../../error";
 import { ErrorBoundary } from "react-error-boundary";
-import { Projects } from "../../projects/components/Projects";
 import { SITE_ROUTES } from "../../../constants";
 import { HeadingDivider, Loader } from "../../../components";
+import { Projects } from "../../../components/Projects";
 
 
 export function ProjectsSection() {
@@ -62,7 +62,6 @@ export function ProjectsSection() {
 							transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 						}}
 					>
-						<button aria-label='See more projects'>More projects</button>
 					</Link>
 				</div>
 			</section>

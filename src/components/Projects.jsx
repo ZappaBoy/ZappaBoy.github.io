@@ -1,4 +1,5 @@
-import { ProjectItem } from "../../sections";
+import { ProjectItem } from "../app/sections";
+
 
 export function Projects({ projects }) {
 	return (

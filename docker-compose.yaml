@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    image: zappaboy_portfolio:latest
+    container_name: zappaboy-portfolio
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "${EXTERNAL_PORT}:80"
+
