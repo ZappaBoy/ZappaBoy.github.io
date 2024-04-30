@@ -1,9 +1,9 @@
-const author = "Vasile Novatchii";
+const author = "Federico Zappone";
 const description =
-	"Software developer from Moldova, Republic of, who loves to develop beautiful websites, single page applications, customer relationship management or code from scratch using React and Next.js";
-const url = "https://vasile-novatchii.netlify.app";
+	"Full-stack developer with a Master's Degree in Software Systems Security and co-founder of Just Another S.R.L. and BB-SMILE S.R.L.";
+const url = "https://zappaboy.github.io";
 export const AppMetadata = {
-	metadataBase: new URL("https://vasile-novatchii.netlify.app/"),
+	metadataBase: new URL("https://zappaboy.github.io"),
 	title: {
 		default: `Portfolio | ${author}`,
 		template: `%s | ${author}`
@@ -13,12 +13,10 @@ export const AppMetadata = {
 		icon: "/favicon.png"
 	},
 	keywords: [
-		"Vasile Novatchii",
-		"Vasile Novatchii - software developer",
-		"Frontend developer",
-		"Flutter developer",
-		"Portfolio website",
-		"Frontend Developer Portfolio"
+		"Federico Zappone",
+		"Federico Zappone - Software Feveloper",
+		"Just Another",
+		"Just Another S.R.L."
 	],
 	creator: author,
 	authors: [{ name: author, url: url }],
@@ -30,16 +28,16 @@ export const AppMetadata = {
 		siteName: `${author} | Portfolio`,
 		images: [
 			{
-				url: "https://vasile-novatchii.netlify.app/screenshot.webp",
+				url: "https://zappaboy.github.io/screenshot.webp",
 				width: 800,
 				height: 600,
-				alt: "My personal portfolio website"
+				alt: "Federico Zappone website"
 			},
 			{
-				url: "https://vasile-novatchii.netlify.app/screenshot.webp",
+				url: "https://zappaboy.github.io/screenshot.webp",
 				width: 1800,
 				height: 1600,
-				alt: "My personal portfolio website"
+				alt: "Federico Zappone website"
 			}
 		],
 		locale: "en-US",
