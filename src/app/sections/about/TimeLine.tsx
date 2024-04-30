@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { MouseEvent, MutableRefObject, useEffect, useRef, useState } from "react";
 import { domAnimation, LazyMotion, useInView } from "framer-motion";
 
 const TimeLineData = [
@@ -15,15 +15,15 @@ export function TimeLine() {
 	/// TODO: Add color mode support
 	const colorMode = "dark";
 	const [, setActiveItem] = useState(0);
-	const carouselRef = useRef(null);
+	const carouselRef: MutableRefObject<any> = useRef(null);
 	// const animRef = useRef(null);
 	const isInView = useInView(carouselRef, { once: true });
 
-	const scroll = (node, left) => {
+	const scroll = (node: any, left: number) => {
 		return node.scrollTo({ left, behavior: "smooth" });
 	};
 
-	const handleClick = (e, i) => {
+	const handleClick = (e: MouseEvent, i: number) => {
 		e.preventDefault();
 
 		if (carouselRef.current) {
@@ -84,7 +84,7 @@ export function TimeLine() {
 								}}
 							>
 								<h3
-									tabIndex='0'
+									tabIndex={0}
 									aria-label={"What do I do in " + item.year}
 									className='flex items-center gap-4 text-2xl font-bold'
 								>
@@ -117,7 +117,7 @@ export function TimeLine() {
 										</defs>
 									</svg>
 								</h3>
-								<p className='tracking-wide ' tabIndex='0'>
+								<p className='tracking-wide ' tabIndex={0}>
 									{item.text}
 								</p>
 							</li>

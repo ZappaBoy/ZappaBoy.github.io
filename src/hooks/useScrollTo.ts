@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { navigationHeight } from "../utils/theme-config";
+import { navigationHeight } from "../utils";
 
 export function useScrollTo() {
 	const [height, setHeight] = useState(navigationHeight);
@@ -17,7 +17,7 @@ export function useScrollTo() {
 		return () => window.removeEventListener("resize", handleResize);
 	}, []);
 
-	const scrollToEl = (e) => {
+	const scrollToEl = (e: any) => {
 		e.preventDefault();
 		const hash = e.target.hash;
 		const offsetTop = document?.querySelector(hash)?.offsetTop - height;

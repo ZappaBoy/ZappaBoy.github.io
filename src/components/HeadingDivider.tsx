@@ -1,14 +1,14 @@
 "use client";
 
 import { domAnimation, LazyMotion, m } from "framer-motion";
-import { animate, exit, initial, transition } from "../utils/motions";
+import { animate, exit, initial, transition } from "../utils";
 
 export function HeadingDivider({ title = "" }) {
 	return (
 		<header className='flex items-center'>
 			<LazyMotion features={domAnimation}>
 				<m.h2
-					tabIndex='0'
+					tabIndex={0}
 					initial={initial}
 					animate={animate}
 					exit={exit}

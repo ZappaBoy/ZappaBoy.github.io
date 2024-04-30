@@ -7,7 +7,7 @@ import { IoIosArrowDropup } from "react-icons/io";
 export function ScrollTop() {
 	const { scrollToEl } = useScrollTo();
 
-	const onClick = (e) => {
+	const onClick = (e: any) => {
 		scrollToEl(e);
 	};
 

@@ -1,29 +1,25 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { domAnimation, LazyMotion, m } from "framer-motion";
 import { useScrollTo } from "../hooks";
-import { BsArrowReturnLeft } from "react-icons/bs";
 import { animate, exit, initial, transition } from "../utils";
-import { MENU_OPTIONS, SITE_ROUTES, SITE_STRINGS } from "../constants";
+import { MENU_OPTIONS } from "../constants";
 
 export function Menu({
 											 onClick = () => {
 											 }
 										 }) {
-	let content, mainMenu, backMenu;
-	const pathname = usePathname();
+	let content;
 	const { scrollToEl } = useScrollTo();
 
-	const sortAscending = (a, b) => a.id - b.id;
+	const sortAscending = (a: any, b: any) => a.id - b.id;
 
-	const handleOnClick = (e) => {
+	const handleOnClick = (e: any) => {
 		scrollToEl(e);
 		window.setTimeout(() => onClick(), 350);
 	};
 
-	mainMenu = (
+	content = (
 		<m.nav initial={initial} animate={animate} exit={exit} transition={transition} role='menu'>
 			<ul className='flex justify-center gap-5 flex-col md:flex-row items-start md:items-center'>
 				{MENU_OPTIONS.sort(sortAscending).map((menuItem) => (
@@ -41,23 +37,6 @@ export function Menu({
 			</ul>
 		</m.nav>
 	);
-
-	backMenu = (
-		<m.div initial={initial} animate={animate} exit={exit} transition={transition}>
-			<Link
-				href={SITE_ROUTES.home}
-				title={SITE_STRINGS.backToMainPageTitle}
-				className='icon-link-btn'
-			>
-				<span>
-					<BsArrowReturnLeft />
-				</span>
-				{SITE_STRINGS.backToMainText}
-			</Link>
-		</m.div>
-	);
-
-	content = pathname === SITE_ROUTES.projects ? backMenu : mainMenu;
 
 	if (MENU_OPTIONS.length === 0) {
 		return null;

@@ -15,7 +15,7 @@ export function AboutSection() {
 				<HeadingDivider title='About me' />
 				<div className='pt-10 pb-16 max-w-5xl flex flex-col gap-3'>
 					<div
-						tabIndex='0'
+						tabIndex={0}
 						ref={ref}
 						className='text-xl font-light leading-relaxed'
 						style={{

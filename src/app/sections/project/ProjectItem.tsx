@@ -1,15 +1,22 @@
 import { Suspense, useRef } from "react";
 import { useInView } from "framer-motion";
 import Link from "next/link";
-import ImageGallery from "react-image-gallery";
+import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
 import { VscSourceControl } from "react-icons/vsc";
 import { FiExternalLink } from "react-icons/fi";
 
 import "react-image-gallery/styles/css/image-gallery.css";
 import { Loader } from "../../../components";
+import { ProjectModel } from "../../models/project.model";
 
-export function ProjectItem({ project, index }) {
-	const { description, images, liveUrl, repoUrl, stack, title } = project;
+interface ProjectItemProps {
+	project: ProjectModel;
+	index: number;
+}
+
+export function ProjectItem(props: ProjectItemProps) {
+	const { description, images, liveUrl, repoUrl, stack, title } = props.project;
+	const { index } = props;
 	const cardRef = useRef(null);
 	const isInView = useInView(cardRef, { once: true });
 
@@ -34,11 +41,11 @@ export function ProjectItem({ project, index }) {
 				<div className='aspect-[12/9.2] w-full h-full'>
 					<Suspense fallback={<Loader />}>
 						<ImageGallery
-							items={galleryImages}
+							items={galleryImages as ReactImageGalleryItem[]}
 							showPlayButton={false}
 							showThumbnails={false}
 							showIndex
-							lazyload
+							lazyLoad={true}
 							additionalClass='gallery-item'
 						/>
 					</Suspense>
@@ -47,10 +54,10 @@ export function ProjectItem({ project, index }) {
 
 			<div className='flex-[2] px-5 py-6 text-center flex flex-col gap-10'>
 				<header className='flex-1 flex items-center justify-start flex-col gap-3'>
-					<h3 tabIndex='0' className='text-2xl font-bold'>
+					<h3 tabIndex={0} className='text-2xl font-bold'>
 						{title}
 					</h3>
-					<p tabIndex='0' className='leading-7 font-light'>
+					<p tabIndex={0} className='leading-7 font-light'>
 						{description}
 					</p>
 				</header>
@@ -61,7 +68,7 @@ export function ProjectItem({ project, index }) {
 							{stack.map((tag) => (
 								<span
 									key={tag}
-									tabIndex='0'
+									tabIndex={0}
 									className='px-2 text-sm leading-normal rounded bg-badge-light/50 dark:bg-badge-dark'
 								>
 									{tag}

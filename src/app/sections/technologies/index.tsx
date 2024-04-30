@@ -15,7 +15,7 @@ export function TechnologiesSection() {
 				<HeadingDivider title='Technologies' />
 				<p
 					ref={textRef}
-					tabIndex='0'
+					tabIndex={0}
 					className='my-5 text-2xl'
 					style={{
 						transform: isTextInView ? "none" : "translateX(-200px)",
@@ -44,13 +44,13 @@ export function TechnologiesSection() {
 										}s`
 									}}
 								>
-									<h3 tabIndex='0' className='text-2xl font-bold'>
+									<h3 tabIndex={0} className='text-2xl font-bold'>
 										{tech.category}
 									</h3>
 									<div className='flex items-center flex-wrap gap-x-5 gap-y-8'>
 										{tech.items.map((item) => (
 											<div key={item.name} className='group relative flex'>
-												<span tabIndex='0' role='img'>
+												<span tabIndex={0} role='img'>
 													{item.icon}
 												</span>
 												<span
