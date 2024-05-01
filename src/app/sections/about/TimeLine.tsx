@@ -4,11 +4,11 @@ import { MouseEvent, MutableRefObject, useEffect, useRef, useState } from "react
 import { domAnimation, LazyMotion, useInView } from "framer-motion";
 
 const TimeLineData = [
-	{ year: 2023, text: "Start my journey as a Flutter developer" },
-	{ year: 2022, text: "Start my journey as a React developer" },
-	{ year: 2021, text: "Dive completely into React.js" },
-	{ year: 2018, text: "Work as a WordPress developer" },
-	{ year: 2017, text: "Start a 3mo WordPress internship" }
+	{ year: 2019, text: "Site for Public Administration" },
+	{ year: 2019, text: "One-man IT team and blockchain dev" },
+	{ year: 2021, text: "Research grant on blockchain traceability" },
+	{ year: 2022, text: "Co-founded BB-SMILE S.R.L." },
+	{ year: 2022, text: "Co-founded Just Another S.R.L." }
 ];
 
 export function TimeLine() {

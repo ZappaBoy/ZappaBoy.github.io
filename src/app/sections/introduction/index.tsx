@@ -16,10 +16,10 @@ export function WelcomeSection() {
 
 	let [count, setCount] = useState(0);
 	const [text] = useState([
-		"build Flutter apps for Android/iOS",
-		"convert design into modern UI",
-		"build interactive UI using React",
-		"develop websites using Next.js"
+		"graduated in Software Systems Security",
+		"am a full-stack developer",
+		"code blockchains and AI models",
+		"trade automatically with my systems"
 	]);
 
 	const onClick = (e: MouseEvent) => scrollToEl(e);
@@ -100,24 +100,44 @@ export function WelcomeSection() {
 								transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 							}}
 						>
-							Stick around to see some of my work.
+							Would you like to know more about me?
 						</p>
 						<div
 							ref={ref}
 							style={{
 								transform: isInView ? "none" : "translateY(50px)",
 								opacity: isInView ? 1 : 0,
-								transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+								transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+								display: "inline-flex",
+								flexFlow: "wrap",
+								justifyContent: "space-between",
+								gap: "1rem"
 							}}
 						>
 							<Link
-								href='#projects'
+								href='#about'
 								onClick={onClick}
 								tabIndex={0}
 								className='btn'
-								aria-label='Latest projects'
+								aria-label='Know me better'
 							>
-								See my latest projects
+								Know me better
+							</Link>
+
+							<Link
+								href=''
+								className='btn bg-gray-600'
+								aria-label='English CV'
+							>
+								English CV
+							</Link>
+
+							<Link
+								href=''
+								className='btn bg-gray-600'
+								aria-label='Italian CV'
+							>
+								Italian CV
 							</Link>
 						</div>
 					</div>

@@ -5,7 +5,7 @@ const url = "https://zappaboy.github.io";
 export const AppMetadata = {
 	metadataBase: new URL("https://zappaboy.github.io"),
 	title: {
-		default: `Portfolio | ${author}`,
+		default: `ZappaBoy | ${author}`,
 		template: `%s | ${author}`
 	},
 	description: description,
@@ -14,7 +14,7 @@ export const AppMetadata = {
 	},
 	keywords: [
 		"Federico Zappone",
-		"Federico Zappone - Software Feveloper",
+		"Federico Zappone - Software Developer",
 		"Just Another",
 		"Just Another S.R.L."
 	],
@@ -22,10 +22,10 @@ export const AppMetadata = {
 	authors: [{ name: author, url: url }],
 	colorScheme: "dark",
 	openGraph: {
-		title: `${author} | Portfolio`,
+		title: `${author} | ZappaBoy`,
 		description: description,
 		url: url,
-		siteName: `${author} | Portfolio`,
+		siteName: `${author} | ZappaBoy`,
 		images: [
 			{
 				url: "https://zappaboy.github.io/screenshot.webp",
