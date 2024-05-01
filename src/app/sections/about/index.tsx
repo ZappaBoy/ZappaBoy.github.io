@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { domAnimation, LazyMotion, useInView } from "framer-motion";
 import { TimeLine } from "./TimeLine";
 import { HeadingDivider } from "../../../components";
+import Link from "next/link";
 
 export function AboutSection() {
 	const ref = useRef(null);
@@ -13,7 +14,7 @@ export function AboutSection() {
 		<LazyMotion features={domAnimation}>
 			<section id='about' className='section'>
 				<HeadingDivider title='About me' />
-				<div className='pt-10 pb-16 max-w-5xl flex flex-col gap-3'>
+				<div className='pt-10 pb-16 max-w-7xl flex flex-col gap-3'>
 					<div
 						tabIndex={0}
 						ref={ref}
@@ -24,8 +25,13 @@ export function AboutSection() {
 							transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 						}}
 					>
+						<img
+							src='/assets/avatar.jpg'
+							alt='avatar'
+							className='m-auto md:float-right md:ml-6 md:mr-10 md:mt-1 object-cover rounded-md w-56 h-56 md:w-72 md:h-72 lg:w-86 lg:h-86'
+						/>
 						<p>
-							My name is Federico Zappone. I&lsquo;m a full-stack developer and the co-founder of
+							My name is Federico Zappone aka ZappaBoy. I&lsquo;m a software engineer and the co-founder of
 							two companies: <a className='text-blue-light' href={"https://www.justanother.cloud/"}>Just Another
 							S.R.L.</a> and
 							<a className='text-blue-light' href={"https://bb-smile.net/"}> BB-SMILE S.R.L.</a>
@@ -71,8 +77,35 @@ export function AboutSection() {
 							That‘s why we decided to start a company that creates elegant software with very high-quality standards.
 						</p>
 
+						<p className='my-3.5'>
+							Check out my CV for more details:
+						</p>
+
+						<div className='flex gap-3'>
+							<Link
+								target='_blank'
+								href='/assets/cv/Federico_Zappone_en.pdf'
+								className='btn bg-gray-600'
+								aria-label='English'
+							>
+								English
+							</Link>
+
+							<Link
+								target='_blank'
+								href='/assets/cv/Federico_Zappone_it.pdf'
+
+								className='btn bg-gray-600'
+								aria-label='Italian'
+							>
+								Italian
+							</Link>
+						</div>
+
 					</div>
+
 				</div>
+
 
 				<TimeLine />
 			</section>

@@ -1,6 +1,6 @@
 const author = "Federico Zappone";
 const description =
-	"Full-stack developer with a Master's Degree in Software Systems Security and co-founder of Just Another S.R.L. and BB-SMILE S.R.L.";
+	"Software engineer with a Master's Degree in Software Systems Security and co-founder of Just Another S.R.L. and BB-SMILE S.R.L.";
 const url = "https://zappaboy.github.io";
 export const AppMetadata = {
 	metadataBase: new URL("https://zappaboy.github.io"),

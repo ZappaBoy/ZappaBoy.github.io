@@ -17,7 +17,7 @@ export function WelcomeSection() {
 	let [count, setCount] = useState(0);
 	const [text] = useState([
 		"graduated in Software Systems Security",
-		"am a full-stack developer",
+		"am a full-stack software engineer",
 		"code blockchains and AI models",
 		"trade automatically with my systems"
 	]);
@@ -52,7 +52,7 @@ export function WelcomeSection() {
 							}}
 						>
 							<p>
-								Hi, I&apos;m <mark>Federico Zappone</mark> an <mark>enthusiast</mark> software developer.
+								Hi, I&apos;m <mark>ZappaBoy</mark> a software engineer.
 							</p>
 						</h1>
 
@@ -107,11 +107,7 @@ export function WelcomeSection() {
 							style={{
 								transform: isInView ? "none" : "translateY(50px)",
 								opacity: isInView ? 1 : 0,
-								transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-								display: "inline-flex",
-								flexFlow: "wrap",
-								justifyContent: "space-between",
-								gap: "1rem"
+								transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 							}}
 						>
 							<Link
@@ -123,27 +119,13 @@ export function WelcomeSection() {
 							>
 								Know me better
 							</Link>
-
-							<Link
-								href=''
-								className='btn bg-gray-600'
-								aria-label='English CV'
-							>
-								English CV
-							</Link>
-
-							<Link
-								href=''
-								className='btn bg-gray-600'
-								aria-label='Italian CV'
-							>
-								Italian CV
-							</Link>
 						</div>
 					</div>
 
 					{isTabletUp && <WelcomeAnimation />}
+
 				</div>
+
 			</section>
 		</LazyMotion>
 	);
