@@ -94,7 +94,6 @@ export function AboutSection() {
 							<Link
 								target='_blank'
 								href='/assets/cv/Federico_Zappone_it.pdf'
-
 								className='btn bg-gray-600'
 								aria-label='Italian'
 							>
