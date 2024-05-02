@@ -28,7 +28,7 @@ export function AboutSection() {
 						<img
 							src='/assets/avatar.jpg'
 							alt='avatar'
-							className='m-auto md:float-right md:ml-6 md:mr-10 md:mt-1 object-cover rounded-md w-56 h-56 md:w-72 md:h-72 lg:w-86 lg:h-86'
+							className='m-auto md:float-right md:ml-6 md:mr-10 md:mt-1 object-cover rounded-sm w-56 h-56 md:w-72 md:h-72 lg:w-86 lg:h-86'
 						/>
 						<p>
 							My name is Federico Zappone aka ZappaBoy. I&lsquo;m a software engineer and the co-founder of
