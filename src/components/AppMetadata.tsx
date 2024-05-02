@@ -1,8 +1,10 @@
-const author = "Federico Zappone";
-const description =
-	"Software engineer with a Master's Degree in Software Systems Security and co-founder of Just Another S.R.L. and BB-SMILE S.R.L.";
-const url = "https://zappaboy.github.io";
-export const AppMetadata = {
+import { Metadata } from "next";
+
+const author: string = "Federico Zappone";
+const description: string = "Software engineer with a Master's Degree in Software Systems Security and co-founder of Just Another S.R.L. and BB-SMILE S.R.L.";
+const url: string = "https://zappaboy.github.io";
+
+export const AppMetadata: Metadata = {
 	metadataBase: new URL("https://zappaboy.github.io"),
 	title: {
 		default: `ZappaBoy | ${author}`,
@@ -10,7 +12,7 @@ export const AppMetadata = {
 	},
 	description: description,
 	icons: {
-		icon: "/favicon.png"
+		icon: "/favicon.ico"
 	},
 	keywords: [
 		"Federico Zappone",
@@ -20,7 +22,6 @@ export const AppMetadata = {
 	],
 	creator: author,
 	authors: [{ name: author, url: url }],
-	colorScheme: "dark",
 	openGraph: {
 		title: `${author} | ZappaBoy`,
 		description: description,
