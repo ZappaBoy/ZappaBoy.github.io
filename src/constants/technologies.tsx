@@ -62,7 +62,6 @@ import {
 	SiWordpress
 } from "react-icons/si";
 
-
 export const TECHNOLOGIES = [
 	{
 		category: "AI",

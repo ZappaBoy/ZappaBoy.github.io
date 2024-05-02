@@ -1,6 +1,5 @@
 "use client";
 
-
 import { AboutSection, ProjectsSection, TechnologiesSection, WelcomeSection } from "./sections";
 
 export default function Page() {

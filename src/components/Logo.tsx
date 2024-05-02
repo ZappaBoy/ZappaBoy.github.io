@@ -5,7 +5,6 @@ import { animate, exit, initial, transition } from "../utils";
 import { SITE_STRINGS } from "../constants";
 
 export function Logo() {
-
 	return (
 		<LazyMotion features={domAnimation}>
 			<m.h3

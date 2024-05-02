@@ -123,9 +123,7 @@ export function WelcomeSection() {
 					</div>
 
 					{isTabletUp && <WelcomeAnimation />}
-
 				</div>
-
 			</section>
 		</LazyMotion>
 	);

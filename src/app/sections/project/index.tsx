@@ -4,10 +4,7 @@ import { HeadingDivider, Loader } from "../../../components";
 import { Projects } from "../../../components/Projects";
 import { PROJECTS } from "../../../constants";
 
-
 export function ProjectsSection() {
-
-
 	return (
 		<LazyMotion features={domAnimation}>
 			<section id='projects' className='section'>

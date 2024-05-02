@@ -22,7 +22,8 @@ export function AppFooter() {
 				}}
 			>
 				<div className='flex flex-col md:flex-row justify-between items-center gap-10 md:gap-5'>
-					<p className='font-light'>Copyright &copy; {year} Zappone Federico - Inspired by
+					<p className='font-light'>
+						Copyright &copy; {year} Zappone Federico - Inspired by
 						<a href='https://vasile-novatchii.netlify.app/'> Vasile Novatchii</a>
 					</p>
 					<ScrollTop />
