@@ -6,7 +6,7 @@ import { VscSourceControl } from "react-icons/vsc";
 import { FiExternalLink } from "react-icons/fi";
 
 import "react-image-gallery/styles/css/image-gallery.css";
-import { Loader } from "../../../components";
+import { Loader } from "../../components";
 import { ProjectModel } from "../../models/project.model";
 
 interface ProjectItemProps {

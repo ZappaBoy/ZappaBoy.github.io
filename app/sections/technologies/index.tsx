@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { domAnimation, LazyMotion, useInView } from "framer-motion";
-import { TECHNOLOGIES } from "../../../constants";
-import { HeadingDivider } from "../../../components";
+import { TECHNOLOGIES } from "../../constants";
+import { HeadingDivider } from "../../components";
 
 export function TechnologiesSection() {
 	const textRef = useRef(null);

@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 import { domAnimation, LazyMotion } from "framer-motion";
-import { HeadingDivider, Loader } from "../../../components";
-import { Projects } from "../../../components/Projects";
-import { PROJECTS } from "../../../constants";
+import { HeadingDivider, Loader } from "../../components";
+import { Projects } from "../../components/Projects";
+import { PROJECTS } from "../../constants";
 
 export function ProjectsSection() {
 	return (

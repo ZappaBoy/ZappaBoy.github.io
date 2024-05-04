@@ -5,8 +5,8 @@ import { domAnimation, LazyMotion, useInView } from "framer-motion";
 
 const TimeLineData = [
 	{ year: 2019, text: "Site for Public Administration" },
-	{ year: 2019, text: "One-man IT team and blockchain dev" },
-	{ year: 2021, text: "Research grant on blockchain traceability" },
+	{ year: 2019, text: "Blockchain, web developer and sysadmin" },
+	{ year: 2021, text: "Research grant on blockchain development" },
 	{ year: 2022, text: "Co-founded BB-SMILE S.R.L." },
 	{ year: 2022, text: "Co-founded Just Another S.R.L." }
 ];

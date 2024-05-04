@@ -4,8 +4,8 @@ import { MouseEvent, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { domAnimation, LazyMotion, useInView } from "framer-motion";
 import { WelcomeAnimation } from "./IntroAnimation";
-import { useScrollTo } from "../../../hooks";
-import { useMediaQuery } from "../../../utils";
+import { useScrollTo } from "../../hooks";
+import { useMediaQuery } from "../../utils";
 
 export function WelcomeSection() {
 	const ref = useRef(null);

@@ -1,5 +1,5 @@
-import { ProjectItem } from "../app/sections";
-import { ProjectModel } from "../app/models/project.model";
+import { ProjectItem } from "../sections";
+import { ProjectModel } from "../models/project.model";
 
 interface ProjectsProps {
 	projects: ProjectModel[];
