@@ -1,7 +1,15 @@
 /** @type {import("tailwindcss").Config} */
 module.exports = {
 	content: [
-		"./app/**/*.{js,ts,jsx,tsx}"
+		"./app/**/*.{js,ts,jsx,tsx}",
+		"./components/**/*.{js,ts,jsx,tsx}",
+		"./constants/**/*.{js,ts,jsx,tsx}",
+		"./context/**/*.{js,ts,jsx,tsx}",
+		"./hooks/**/*.{js,ts,jsx,tsx}",
+		"./models/**/*.{js,ts,jsx,tsx}",
+		"./sections/**/*.{js,ts,jsx,tsx}",
+		"./styles/**/*.{js,ts,jsx,tsx}",
+		"./utils/**/*.{js,ts,jsx,tsx}"
 	],
 	darkMode: "class",
 	theme: {

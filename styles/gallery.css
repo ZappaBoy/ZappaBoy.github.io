@@ -2,8 +2,7 @@
     @apply w-[inherit] h-[inherit];
 }
 
-.gallery-item
-:is(
+.gallery-item:is(
 		.image-gallery-content,
 		.image-gallery-slide-wrapper,
 		.image-gallery-swipe,
