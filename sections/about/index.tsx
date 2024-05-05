@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { domAnimation, LazyMotion, useInView } from "framer-motion";
-import { TimeLine } from "./TimeLine";
+import { TimeLine } from "../../components/TimeLine";
 import { HeadingDivider } from "../../components";
 import Link from "next/link";
 
@@ -50,7 +50,8 @@ export function AboutSection() {
 						<p className='my-3.5'>
 							However, my programming journey began during my studies in 2019 with a university
 							project in collaboration with a Public Administration entity. This was a great
-							experience thanks to my teammates and here I started my first ML algorithm.
+							experience thanks to my teammates and here I started my first Machine Learning
+							algorithm.
 						</p>
 						<p className='my-3.5'>
 							So, I seriously started working for a small company as a freelancer. I was responsible
@@ -58,7 +59,7 @@ export function AboutSection() {
 							which is the main core of the projects.
 						</p>
 						<p className='my-3.5'>
-							In 2020, I won a research grant at the University of Molise for the design and the
+							In 2020, I won a research grant at the University of Molise for the design and
 							development of a blockchain for the <i> Nova Tellus</i> project.
 						</p>
 						<p className='my-3.5'>
@@ -104,7 +105,14 @@ export function AboutSection() {
 					</div>
 				</div>
 
-				<TimeLine />
+				<TimeLine timelineData={[
+					{ year: 2019, text: "Site for Public Administration" },
+					{ year: 2019, text: "Blockchain, web developer and sysadmin" },
+					{ year: 2021, text: "Research grant on blockchain development" },
+					{ year: 2022, text: "Co-founded BB-SMILE S.R.L." },
+					{ year: 2022, text: "Co-founded Just Another S.R.L." }
+				]}
+				/>
 			</section>
 		</LazyMotion>
 	);

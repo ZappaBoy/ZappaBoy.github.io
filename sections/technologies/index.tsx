@@ -13,21 +13,26 @@ export function TechnologiesSection() {
 		<LazyMotion features={domAnimation}>
 			<section id='tech' className='section'>
 				<HeadingDivider title='Technologies' />
-				<p
-					ref={textRef}
-					tabIndex={0}
-					className='my-5 text-2xl'
-					style={{
-						transform: isTextInView ? "none" : "translateX(-200px)",
-						opacity: isTextInView ? 1 : 0,
-						transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-					}}
-				>
-					Some of the technologies and tools i have worked with:
-				</p>
+
+				<div className='pt-10 pb-16 max-w-7xl flex flex-col gap-3'>
+					<div
+						tabIndex={0}
+						ref={textRef}
+						className='text-xl font-light leading-relaxed'
+						style={{
+							transform: isTextInView ? "none" : "translateX(-200px)",
+							opacity: isTextInView ? 1 : 0,
+							transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+						}}
+					>
+						<p>
+							Some of the technologies and tools I have worked with:
+						</p>
+					</div>
+				</div>
 
 				{!!TECHNOLOGIES.length && (
-					<div className='mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10'>
+					<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10'>
 						{TECHNOLOGIES.map((tech, index) => {
 							return (
 								<div

@@ -44,7 +44,7 @@ export const PROJECTS: ProjectModel[] = [
 	{
 		id: 5,
 		description:
-			"Crawlall is a simple crawler tool that uses Google search enginesupported features to find and collect required patterns (email, URL, IP address, etc.) related to a search query.",
+			"Crawlall is a simple crawler tool that uses Google search engine supported features to find and collect required patterns (email, URL, IP address, etc.) related to a search query.",
 		images: ["/assets/projects/crawlall/logo.jpeg"],
 		liveUrl: "",
 		repoUrl: "https://github.com/ZappaBoy/crawlall",
@@ -74,7 +74,7 @@ export const PROJECTS: ProjectModel[] = [
 	{
 		id: 8,
 		description:
-			"Hi-jacket is an automated cryptojacker that find XSS vulnerabilities and exploit them by loading a cryptojacking script with GPU support.",
+			"Hi-jacket is an automated cryptojacker that finds XSS vulnerabilities and exploit them by loading a cryptojacking script with GPU support.",
 		images: ["/assets/projects/hi-jacket/logo.jpeg"],
 		liveUrl: "",
 		repoUrl: "https://github.com/ZappaBoy/hi-jacket",

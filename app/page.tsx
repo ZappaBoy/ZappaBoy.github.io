@@ -1,6 +1,14 @@
 "use client";
 
-import { AboutSection, ProjectsSection, TechnologiesSection, WelcomeSection } from "../sections";
+import {
+	AboutSection,
+	CertificationsSection,
+	ProjectsSection,
+	PublicationsSection,
+	TechnologiesSection,
+	WelcomeSection
+} from "../sections";
+import React from "react";
 
 export default function Page() {
 	return (
@@ -8,6 +16,8 @@ export default function Page() {
 			<WelcomeSection />
 			<AboutSection />
 			<TechnologiesSection />
+			<PublicationsSection />
+			<CertificationsSection />
 			<ProjectsSection />
 		</div>
 	);

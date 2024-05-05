@@ -3,16 +3,20 @@
 import { MouseEvent, MutableRefObject, useEffect, useRef, useState } from "react";
 import { domAnimation, LazyMotion, useInView } from "framer-motion";
 
-const TimeLineData = [
-	{ year: 2019, text: "Site for Public Administration" },
-	{ year: 2019, text: "Blockchain, web developer and sysadmin" },
-	{ year: 2021, text: "Research grant on blockchain development" },
-	{ year: 2022, text: "Co-founded BB-SMILE S.R.L." },
-	{ year: 2022, text: "Co-founded Just Another S.R.L." }
-];
 
-export function TimeLine() {
-	/// TODO: Add color mode support
+export interface TimelineData {
+	year: number;
+	text: string;
+}
+
+interface TimeLineProps {
+	timelineData: TimelineData[];
+}
+
+
+export function TimeLine(props: TimeLineProps) {
+
+	const timelineData: TimelineData[] = props.timelineData;
 	const colorMode = "dark";
 	const [, setActiveItem] = useState(0);
 	const carouselRef: MutableRefObject<any> = useRef(null);
@@ -28,7 +32,7 @@ export function TimeLine() {
 
 		if (carouselRef.current) {
 			const scrollLeft = Math.floor(
-				carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length)
+				carouselRef.current.scrollWidth * 0.7 * (i / timelineData.length)
 			);
 
 			scroll(carouselRef.current, scrollLeft);
@@ -39,7 +43,7 @@ export function TimeLine() {
 		if (carouselRef.current) {
 			const index = Math.round(
 				(carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) *
-				TimeLineData.length
+				timelineData.length
 			);
 
 			setActiveItem(index);
@@ -66,7 +70,7 @@ export function TimeLine() {
 				className='flex flex-row flex-nowrap gap-5 justify-between overflow-x-auto snap-x cursor-pointer hide-scroll-bar'
 			>
 				<>
-					{TimeLineData.map((item, index) => {
+					{timelineData.map((item, index) => {
 						return (
 							<li
 								id={`carousel__item-${index}`}
