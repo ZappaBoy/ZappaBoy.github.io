@@ -36,11 +36,11 @@ export function AboutSection() {
 							<a className="text-blue-light" href="https://www.artificialy.com/">
 								Artificialy SA
 							</a>
-							, and the co-founder of two innovative tech companies:
+							, and the co-founder of two innovative tech companies:{" "}
 							<a className="text-blue-light" href="https://www.justanother.cloud/">
 								Just Another S.R.L.
 							</a>{" "}
-							and
+							and{" "}
 							<a className="text-blue-light" href="https://bb-smile.net/">
 								BB-SMILE S.R.L.
 							</a>
