@@ -122,11 +122,11 @@ export function AboutSection() {
 
 				<TimeLine
 					timelineData={[
-						{ year: 2019, text: "Site for Public Administration" },
 						{ year: 2019, text: "Blockchain, web developer and sysadmin" },
 						{ year: 2021, text: "Research grant on blockchain development" },
-						{ year: 2022, text: "Co-founded BB-SMILE S.R.L." },
-						{ year: 2022, text: "Co-founded Just Another S.R.L." }
+						{ year: 2022, text: "Co-founded BB-SMILE and Just Another" },
+						{ year: 2024, text: "AWS Cloud Engineer @ Storm Reply" },
+						{ year: 2025, text: "Tech Lead @ Artificialy SA" }
 					]}
 				/>
 			</section>
